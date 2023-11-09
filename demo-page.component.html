@@ -1,66 +1,68 @@
+<div class="container">
 <h1>Greenfeed Pre-trial Machine Level Data</h1>
 
-<form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
-  <div style="margin-top: 20px;">
-      <label for="startDate" style="color: blue;">Start Date:</label>
-      <input type="date" id="startDate" formControlName="startDate">
+<form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="mt-4">
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Start Date:</span>
+    <input type="date" class="form-control" formControlName="startDate">
   </div>
-  <div style="margin-top: 20px;">
-      <label for="greenfeedId"  style="color: blue;">Greenfeed ID:</label>
-      <select id="greenfeedId" class="form-select" formControlName="greenfeedId">
-          <option value="295">295</option>
-          <option value="296">296</option>
-          <option value="395">395</option>
-          <option value="396">396</option>
-      </select>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Greenfeed ID:</span>
+    <select class="form-select" formControlName="greenfeedId">
+      <option value="295">295</option>
+      <option value="296">296</option>
+      <option value="395">395</option>
+      <option value="396">396</option>
+    </select>
   </div>
-  <div style="margin-top: 20px;">
-      <label for="owner" style="color: blue;">Owner:</label>
-      <select id="owner" class="form-select" formControlName="owner">
-          <option value="ABP/MTI">ABP/MTI</option>
-          <option value="ICBF">ICBF</option>
-      </select>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Owner:</span>
+    <select class="form-select" formControlName="owner">
+      <option value="ABP/MTI">ABP/MTI</option>
+      <option value="ICBF">ICBF</option>
+    </select>
   </div>
-  <div style="margin-top: 20px;">
-      <label for="farm" style="color: blue;">Farm:</label>
-      <select id="farm" class="form-select" formControlName="farm">
-          <option value="ABP Shepards">ABP Shepards</option>
-          <option value="Parkduv">Parkduv</option>
-          <option value="Dawn">Dawn</option>
-          <option value="Kepak">Kepak</option>
-      </select>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Farm:</span>
+    <select id="farm" class="form-select" formControlName="farm">
+      <option value="ABP Shepards">ABP Shepards</option>
+      <option value="Parkduv">Parkduv</option>
+      <option value="Dawn">Dawn</option>
+      <option value="Kepak">Kepak</option>
+    </select>
   </div>
-  <div style="margin-top: 20px;">
-    <label for="diet" style="color: blue;">Diet:</label>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Diet:</span>
     <select id="diet" class="form-select" formControlName="diet">
-        <option value="Grass">Grass</option>
-        <option value="Indoor">Indoor</option>
+      <option value="Grass">Grass</option>
+      <option value="Indoor">Indoor</option>
     </select>
   </div>
-  <div style="margin-top: 20px;">
-    <label for="animalType" style="color: blue;">Animal Type:</label>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Animal Type:</span>
     <select id="animalType" class="form-select" formControlName="animalType">
-        <option value="Dairy x Beef">Dairy x Beef</option>
-        <option value="Suckler">Suckler</option>
-        <option value="Milking Dairy Cows">Milking Dairy Cows</option>
+      <option value="Dairy x Beef">Dairy x Beef</option>
+      <option value="Suckler">Suckler</option>
+      <option value="Milking Dairy Cows">Milking Dairy Cows</option>
     </select>
   </div>
-  <div style="margin-top: 20px;">
-    <label for="sex" style="color: blue;">Sex:</label>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Sex:</span>
     <select id="sex" class="form-select" formControlName="sex">
-        <option value="Steer">Steer</option>
-        <option value="Cow">Cow</option>
-        <option value="Heifer">Heifer</option>
-        <option value="Steer/Heifer">Steer/Heifer</option>
+      <option value="Steer">Steer</option>
+      <option value="Cow">Cow</option>
+      <option value="Heifer">Heifer</option>
+      <option value="Steer/Heifer">Steer/Heifer</option>
     </select>
   </div>
-  <div style="margin-top: 20px;">
-    <label for="numberOfCattle" style="color: blue;">Number of Cattle:</label>
-    <input type="number" id="numberOfCattle" formControlName="numberOfCattle">
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Number of Cattle:</span>
+    <input type="number" id="numberOfCattle" class="form-control" formControlName="numberOfCattle">
   </div>
-  <div style="margin-top: 20px;">
-    <label for="comments" style="color: blue;">Comments:</label>
-    <textarea id="comments" formControlName="comments"></textarea>
+  <div class="mb-3 input-group">
+    <span class="input-group-text bg-primary text-white">Comments:</span>
+    <textarea id="comments" class="form-control" formControlName="comments"></textarea>
   </div>
-  <button type="submit" style="background-color: green; color: white;">Submit</button>
+  <button type="submit" class="btn btn-success">Submit</button>
 </form>
+</div>
