@@ -1,6 +1,22 @@
-<div class="container">
-<h1>Greenfeed Pre-trial Machine Level Data</h1>
+<!-- Version 1- Set up all data fields, heading and button -->
+<!-- Version 2- Added bootstrap features in angular.json. Added Container class, mt-4, mb-3 input group class
+      and added bg-primary and text-white to make the presentation look better -->
 
+
+<!-- The container centralises the display and keeps the display in line. Initially in version 1 the code was displayed clung
+      to the left hand side which didn't look pleasing Ref:https://getbootstrap.com/docs/5.0/layout/containers/ -->
+<!-- Below it then are the heading of the screen and the sub-heading with the sub-heading having tect-muted to make the 
+      colour of the text more grey -->
+<div class="container">
+<h1>Greenfeed Pre-trial Machine Level Data
+  <br>
+  <small class="text-muted"> Insert Data related to Methane Trials</small>
+</h1>
+<!-- The form is then opened up below. All input fields are given the class mb-3 input group and have all got the class
+      input-group-text bg-primary text-white to make the background of the inpit field headings blue with white text. Ref:https://getbootstrap.com/docs/4.0/utilities/colors/ and https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
+<!-- There are six dropdown boxes for input fields- Greenfeed ID, Owner, Farm, Diet, Animal type and sex. All of these have options to choose from Ref: https://getbootstrap.com/docs/5.0/forms/select/ -->
+<!-- The other three are a different, The start date is a date-picker, Number of cattle is a number area and Comments is a text area. Ref:https://stackoverflow.com/questions/68662850/datepicker-bootstrap-5 -->
+<!-- At the bottom is a button that will be used to save the data-->
 <form [formGroup]="dataForm" (ngSubmit)="onSubmit()" class="mt-4">
   <div class="mb-3 input-group">
     <span class="input-group-text bg-primary text-white">Start Date:</span>
