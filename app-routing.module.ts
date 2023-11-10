@@ -1,17 +1,28 @@
+//Version 1 - Set up of the module and its imports for the application
+
 //Imports that are required modules and components from Angular core and forms packages taken from Angular.
-//Importing the DemoPageComponent also
+//DemoPageComponent and reactive forms module also included
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { DemoPageComponent } from './demo-page/demo-page.component';
 
-//The application routes using router module
-//The path to the DeomPageComponent is defined
-const routes: Routes = [
-  {path: 'demo-page', component: DemoPageComponent},
-];
-
+// A decorator to define the root components of the application
+// Declaring the main component of the application (AppComponent) and the DemoPageComponent.
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [
+    AppComponent,
+    DemoPageComponent
+  ],
+  //Importing AppRoutingModule for routing and ReactiveFormsModule for having a reactive form
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppRoutingModule { }
+export class AppModule { }
