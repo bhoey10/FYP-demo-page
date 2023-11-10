@@ -1,3 +1,5 @@
+//Version 1 - Set up of the module and its imports for the application
+
 //Imports that are required modules and components from Angular core and forms packages taken from Angular.
 //DemoPageComponent and reactive forms module also included
 import { NgModule } from '@angular/core';
